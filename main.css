@@ -143,7 +143,8 @@ form i.search {
 .filter-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 3%;
+  align-content: space-between;
+  gap: 15px;
   width: 100%;
 }
 
@@ -419,4 +420,91 @@ h4 {
 
 li {
   line-height: 28px;
+}
+
+/* ---------------- Responsive tablette ----------------------- */
+
+@media screen and (max-width: 992px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10%;
+    /* min-height: 2000px; */
+  }
+
+  #second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+    /* height: 850px; */
+  }
+
+  #second-container > .home {
+    min-height: 600px;
+  }
+
+  .cards-home {
+    align-items: center;
+    flex-grow: 2;
+  }
+
+  .info-home {
+    margin: 0 5px 0 5px;
+  }
+
+  #second-container > article {
+    width: 100%;
+    min-height: 260px;
+    gap: 2%;
+    padding: 10px 0 5px 0;
+  }
+
+  article .title-pop {
+    width: 90%;
+    margin: auto;
+  }
+
+  .more {
+    margin-top: 10px;
+  }
+
+  .cards-pop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 180px;
+    margin-bottom: 0;
+    gap: 20px;
+  }
+
+  .card-pop {
+    width: 40%;
+  }
+
+  .info-pop {
+    margin: 10px 0 0 5px;
+  }
+
+  .img-act {
+    height: 80%;
+  }
+
+  .city {
+    height: 20%;
+  }
+
+  #third-container {
+  }
+
+  footer {
+    gap: 10%;
+  }
 }
