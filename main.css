@@ -137,20 +137,19 @@ form i.search {
 
 .filter {
   width: 100%;
-  gap: 2%;
+  gap: 4%;
 }
 
 .filter-group {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  gap: 15px;
+  gap: 30px;
   width: 100%;
 }
 
 .btn-filter {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 5%;
   padding: 15px 20px;
@@ -220,7 +219,7 @@ i {
 #second-container {
   display: flex;
   justify-content: space-between;
-  gap: 3%;
+  gap: 2%;
   margin-bottom: 50px;
 
 }
@@ -239,7 +238,6 @@ article {
   align-items: center;
   gap: 10px;
   flex-basis: 1;
-  min-width: 670px;
 }
 
 .home h2,
@@ -264,17 +262,15 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
+  padding: 0 25px;
   flex-basis: 83%;
-  row-gap: 7%;
-  margin: 0 0;
+  row-gap: 6%;
 }
 
 .card-home {
   width: 30%;
   height: 200px;
-  min-width: 200px;
+  min-width: 195px;
   padding: 5px;
   border-radius: 15px;
   background-color: #fff;
@@ -429,21 +425,24 @@ li {
     margin: auto;
   }
 
+  .btn-filter {
+    gap: 5%;
+  }
+
   #second-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 35px;
+
   }
 
 .cards-home {
-    gap: 30px;
+  width: 90%;
+  padding: 0;
+  /* row-gap: 3%; */
+  gap: 30px;
   }
-
-  /* .cards-home {
-    align-items: center;
-    flex-grow: 2;
-  } */
 
   .info-home {
     margin: 0 5px 0 5px;
@@ -469,7 +468,6 @@ li {
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    /* height: 180px; */
     margin: 10px 0;
     gap: 20px;
   }
@@ -488,9 +486,6 @@ li {
 
   .city {
     height: 20%;
-  }
-
-  #third-container {
   }
 
   footer {
@@ -587,6 +582,7 @@ li {
   }
 
   .btn-filter {
+    gap: 3%;
     width: 47%;
     justify-content: start;
   }
@@ -602,12 +598,10 @@ li {
   article {
     border-radius: 0%;
   }
-
+  
   .home {
     background: none;
-  }
-
-  .cards-pop {
+    padding: 0 0;
   }
 
   .cards-home,
@@ -629,6 +623,10 @@ li {
   .card-pop,
   .card-activity {
     width: 100%;
+  }
+
+  .cards-pop {
+    margin-top: 10px;
   }
 
   .cards-activity {
