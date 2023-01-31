@@ -11,10 +11,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 95%;
-  margin: auto;
+  padding: 2%;
   max-width: 1400px;
   color: black;
+}
+
+h1, h2 {
+  font-size: 20px;
+  font-weight: 800;
 }
 
 p {
@@ -100,11 +104,8 @@ input::placeholder {
   font-weight: 700;
 }
 
-input[type="text"]:focus {
-  border: 1px solid var(--color-primary);
-}
-
 button {
+  font-weight: 700;
   padding: 15px;
   border: 2px solid var(--color-secondary);
   border-radius: 0 15px 15px 0;
@@ -123,15 +124,8 @@ form i.search {
 
 /* --------------- CSS du filtre --------------  */
 
-.filter,
-.economic,
-.family,
-.romantic,
-.animals {
-  display: flex;
-}
-
 .filter {
+  display: flex;
   width: 100%;
   gap: 4%;
 }
@@ -140,7 +134,7 @@ form i.search {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
 }
 
@@ -148,7 +142,7 @@ form i.search {
   display: flex;
   align-items: center;
   gap: 5%;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border: 1px solid #d9d9d9;
   border-radius: 30px;
   user-select: none;
@@ -163,9 +157,11 @@ form i.search {
   display: flex;
   align-items: center;
   font-weight: 700;
-
-  padding-bottom: 0;
   white-space: nowrap;
+}
+
+.filter .btn-filter i {
+  font-size: 25px;
 }
 
 /* ---------- CSS de la phrase info ------------- */
@@ -215,7 +211,7 @@ i {
 #second-container {
   display: flex;
   justify-content: space-between;
-  gap: 2%;
+  gap: 1%;
   margin-bottom: 50px;
 
 }
@@ -223,17 +219,16 @@ i {
 .home,
 article {
   background: var(--color-primary);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 25px 0;
 }
 
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 10px;
-  flex-basis: 1;
+  flex-basis: 70%;
 }
 
 .home h2,
@@ -253,13 +248,15 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 25px;
+  width: 90%;
+  margin: 0 10%;
+  /* padding: 0 25px; */
   flex-basis: 83%;
   row-gap: 6%;
 }
 
 .card-home {
-  width: 30%;
+  width: 29%;
   height: 200px;
   min-width: 195px;
   padding: 5px;
@@ -309,7 +306,7 @@ article {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 40%;
+  width: 30%;
   min-width: 270px;
 }
 
@@ -417,15 +414,15 @@ li {
 /* ---------------- Responsive tablette ----------------------- */
 
 @media screen and (max-width: 992px) {
-  body {
-    width: 90%;
-    margin: auto;
-  }
 
   /* ---------- responsive filtre ---------- */
+  .filter, .filter-group {
+    justify-content: space-between;
+    gap: 1%;
+  }
 
   .btn-filter {
-    gap: 5%;
+    gap: 4%;
   }
 
   /* ----- responsive second container ----- */
@@ -572,11 +569,12 @@ li {
   .filter {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   .filter-group {
     justify-content: space-between;
+    gap: 20px;
   }
 
   .btn-filter {
@@ -616,15 +614,15 @@ li {
     justify-content: center;
     flex-wrap: nowrap;
   }
-
+  
   .card-home,
   .card-pop,
   .card-activity {
     width: 100%;
   }
-
+  
   .cards-pop {
-    margin-top: 10px;
+    margin: 10px 0;
   }
 
   .cards-activity {
