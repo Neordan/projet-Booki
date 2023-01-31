@@ -222,7 +222,7 @@ i {
   justify-content: space-between;
   gap: 3%;
   margin-bottom: 50px;
-  min-height: 600px;
+
 }
 
 .home,
@@ -237,7 +237,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 10px;
   flex-basis: 1;
   min-width: 670px;
 }
@@ -251,14 +251,13 @@ article {
 .title-pop,
 .cards-pop {
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
 }
 
 h2 {
   width: 90%;
   font-size: 1.3rem;
   font-weight: 700;
-  /* flex-grow: 1; */
 }
 
 .cards-home {
@@ -322,7 +321,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 10px;
   width: 40%;
   min-width: 270px;
 }
@@ -430,30 +429,21 @@ li {
     margin: auto;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    gap: 10%;
-    /* min-height: 2000px; */
-  }
-
   #second-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 35px;
-    /* height: 850px; */
   }
 
-  #second-container > .home {
-    min-height: 600px;
+.cards-home {
+    gap: 30px;
   }
 
-  .cards-home {
+  /* .cards-home {
     align-items: center;
     flex-grow: 2;
-  }
+  } */
 
   .info-home {
     margin: 0 5px 0 5px;
@@ -461,18 +451,17 @@ li {
 
   #second-container > article {
     width: 100%;
-    min-height: 260px;
     gap: 2%;
-    padding: 10px 0 5px 0;
+    padding:25px 0;
   }
 
   article .title-pop {
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
   }
 
   .more {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .cards-pop {
@@ -480,8 +469,8 @@ li {
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    height: 180px;
-    margin-bottom: 0;
+    /* height: 180px; */
+    margin: 10px 0;
     gap: 20px;
   }
 
@@ -506,5 +495,158 @@ li {
 
   footer {
     gap: 10%;
+  }
+}
+
+/* ---------------- Responsive mobile ----------------------- */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  /* -------Responsive header ---------- */
+
+  header {
+    display: block;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  nav a:hover {
+    border-bottom: 2px solid var(--color-secondary);
+    border-top: none;
+  }
+
+  /* -------Responsive first container ---------- */
+
+  #first-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  h1 {
+    margin-top: 40px;
+  }
+
+  h3 {
+    font-size: 1.8vmax;
+  }
+
+  p {
+    font-size: 1.8vmax;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .locate {
+    text-align: center;
+    width: 15%;
+  }
+
+  form input {
+    width: 70%;
+  }
+
+  button {
+    display: none;
+  }
+
+  form i.search {
+    display: block;
+    text-align: center;
+    width: 15%;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filter-group {
+    /* width: 80%;
+    margin: auto; */
+    justify-content: space-between;
+  }
+
+  .btn-filter {
+    width: 47%;
+    justify-content: start;
+  }
+
+  /* -------Responsive second container ---------- */
+
+  #second-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  
+  article {
+    border-radius: 0%;
+  }
+
+  .home {
+    background: none;
+  }
+
+  .cards-pop {
+  }
+
+  .cards-home,
+  .cards-pop,
+  .cards-activity,
+  #third-container h2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cards-home {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .card-home,
+  .card-pop,
+  .card-activity {
+    width: 100%;
+  }
+
+  .cards-activity {
+    margin: 30px auto;
+    gap: 30px;
+  }
+  .card-activity {
+    height: 200px;
+  }
+
+  /* -------Responsive footer ---------- */
+
+  footer {
+    display: block;
+    width: 100%;
+    gap: 10%;
+  }
+  footer div {
+    margin-bottom: 50px;
   }
 }
