@@ -17,9 +17,6 @@ body {
   color: black;
 }
 
-h1, h2 {
-  font-weight: 800;
-}
 
 p {
   margin: 0;
@@ -75,13 +72,13 @@ nav > a:hover {
 /* ---------------- CSS du first-container -------------- */
 
 h1 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.2rem;
   margin: 20px 0 10px 0;
 }
 
-#first-container .first {
-  margin-bottom: 20px;
+h2 {
+  font-weight: 800;
 }
 
 /* -------------------- CSS barre de recherche ----------------- */
@@ -89,7 +86,7 @@ h1 {
 form {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 20px 0 30px 0;
   width: 100%;
 }
 
@@ -107,6 +104,8 @@ input {
   padding: 10px;
   border: 1px solid var(--color-primary);
 }
+
+/* focus sur l'input text et couleur du text intérieur */
 
 input::placeholder {
   color: black;
@@ -317,7 +316,6 @@ article {
   align-items: center;
   gap: 10px;
   width: 30%;
-  min-width: 270px;
 }
 
 .title-pop {
