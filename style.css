@@ -30,6 +30,15 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  font-weight: 700;
+}
+
 /* ---------------- CSS du header ------------------- */
 
 header {
@@ -200,7 +209,7 @@ i {
 }
 
 .light {
-  color: var(--color-thirty);
+  color: var(--color-primary);
 }
 
 .stars {
@@ -264,7 +273,7 @@ h2 {
   height: 200px;
   min-width: 195px;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 2px 8px 20px #cbcbcb;
 }
@@ -272,7 +281,7 @@ h2 {
 .img-home {
   width: 100%;
   height: 62%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .info-home {
@@ -288,9 +297,6 @@ h2 {
   font-weight: 800;
 }
 
-span {
-  font-weight: 700;
-}
 
 .more {
   font-size: 1.1rem;
@@ -338,14 +344,14 @@ article {
   min-width: 180px;
   gap: 15px;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 20px;
   background: #fff;
   box-shadow: 2px 8px 20px #cbcbcb;
 }
 
 .img-pop {
   width: 38%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px 0 0 15px;
 }
 
 .info-pop {
@@ -421,8 +427,7 @@ li {
 
   /* ---------- responsive filtre ---------- */
   .filter, .filter-group {
-    justify-content: space-between;
-    gap: 1%;
+    gap: 2%;
   }
 
   .btn-filter {
@@ -551,11 +556,11 @@ li {
 
   .locate {
     text-align: center;
-    width: 15%;
+    width: 60px;
   }
 
   form input {
-    width: 70%;
+    width: 100%;
   }
 
   button {
@@ -565,7 +570,7 @@ li {
   form i.search {
     display: block;
     text-align: center;
-    width: 15%;
+    width: 60px;
   }
 
   /* -------Responsive Filtres ---------- */
@@ -640,6 +645,10 @@ li {
   }
   .card-activity {
     height: 200px;
+  }
+
+  .more {
+    display: none;
   }
 
   /* -------Responsive footer ---------- */
