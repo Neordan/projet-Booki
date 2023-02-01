@@ -12,12 +12,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 2%;
+  margin: auto;
   max-width: 1400px;
   color: black;
 }
 
 h1, h2 {
-  font-size: 20px;
   font-weight: 800;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .img img {
-  width: 50px;
+  width: 60px;
 }
 
 nav {
@@ -104,6 +104,11 @@ input::placeholder {
   font-weight: 700;
 }
 
+input:focus {
+  outline: none;
+  border: 1px solid var(--color-secondary);
+}
+
 button {
   font-weight: 700;
   padding: 15px;
@@ -161,7 +166,7 @@ form i.search {
 }
 
 .filter .btn-filter i {
-  font-size: 25px;
+  font-size: 100%;
 }
 
 /* ---------- CSS de la phrase info ------------- */
@@ -250,7 +255,6 @@ h2 {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 10%;
-  /* padding: 0 25px; */
   flex-basis: 83%;
   row-gap: 6%;
 }
@@ -498,7 +502,7 @@ li {
 
 @media screen and (max-width: 768px) {
   body {
-    width: 100%;
+    padding: 0;
   }
 
   /* -------Responsive header ---------- */
@@ -574,13 +578,18 @@ li {
 
   .filter-group {
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
+    font-size: 14px;
   }
 
   .btn-filter {
     gap: 3%;
     width: 47%;
     justify-content: start;
+  }
+
+  .filter-group p {
+    overflow: hidden;
   }
 
   /* -------Responsive second container ---------- */
