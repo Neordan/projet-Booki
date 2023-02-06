@@ -23,11 +23,7 @@ img {
   object-fit: cover;
 }
 
-span {
-  font-weight: 700;
-}
-
-h3 {
+span, h3 {
   font-weight: 700;
 }
 /* ---------------- CSS du header ------------------- */
@@ -48,14 +44,14 @@ nav {
   width: 300px;
 }
 
-nav > a {
+nav a {
   flex-basis: 50%;
   text-transform: capitalize;
   border-top: 3px solid transparent;
   padding: 30px 0;
 }
 
-nav > a:hover {
+nav a:hover {
   border-top: 3px solid var(--color-secondary);
   color: var(--color-secondary);
 }
@@ -397,7 +393,6 @@ li {
     flex-direction: column;
     justify-content: space-between;
     gap: 35px;
-
   }
 
   .cards-hebergement {
@@ -409,7 +404,7 @@ li {
     margin: 0 5px 0 5px;
   }
 
-  #second-container > article {
+  #second-container article {
     width: 100%;
     gap: 2%;
     padding:25px 0;
@@ -461,9 +456,9 @@ li {
 /* ---------------- Responsive mobile ----------------------- */
 
 @media screen and (max-width: 768px) {
+
   body {
     padding: 20px 0 0 0;
-
   }
 
   /* -------Responsive header ---------- */
@@ -505,7 +500,7 @@ li {
     width: 100%;
   }
 
-  .locate {
+  form i:first-child {
     text-align: center;
     width: 60px;
   }
@@ -570,6 +565,7 @@ li {
   .hebergement {
     background: none;
     padding: 0 0;
+    min-width: 100px;
   }
 
   .cards-hebergement,
